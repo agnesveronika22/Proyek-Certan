@@ -38,7 +38,7 @@ def rekamDataWajah():
         cv2.imshow('webcamku', frame)
         if cv2.waitKey(1) & 0xFF == ord('q'):  # jika menekan tombol q akan berhenti
             break
-        elif ambilData > 30:
+        elif ambilData > 50:
             break
     selesai1()
     cam.release()
@@ -138,33 +138,33 @@ root = tk.Tk()
 # mengatur canvas (window tkinter)
 canvas = tk.Canvas(root, width=700, height=400)
 canvas.grid(columnspan=3, rowspan=8)
-canvas.configure(bg="black")
+canvas.configure(bg="pink")
 # judul
-judul = tk.Label(root, text="Face Attendance - Smart Absensi", font=("Roboto",34),bg="#242526", fg="white")
+judul = tk.Label(root, text="Face Recognation", font=("Roboto",34),bg="#242526", fg="white")
 canvas.create_window(350, 80, window=judul)
 #credit
-made = tk.Label(root, text="Class Attendance", font=("Times New Roman",13), bg="black",fg="white")
+made = tk.Label(root, text="SugarGirls", font=("Times New Roman",20), bg="pink",fg="#00008B")
 canvas.create_window(360, 20, window=made)
 # for entry data nama
 entry1 = tk.Entry (root, font="Roboto")
 canvas.create_window(457, 170, height=25, width=411, window=entry1)
-label1 = tk.Label(root, text="Nama Siswa", font="Roboto", fg="white", bg="black")
-canvas.create_window(90,170, window=label1)
+label1 = tk.Label(root, text="Nama Mahasiswa", font="Roboto", fg="black", bg="pink")
+canvas.create_window(110,170, window=label1)
 # for entry data nim
 entry2 = tk.Entry (root, font="Roboto")
 canvas.create_window(457, 210, height=25, width=411, window=entry2)
-label2 = tk.Label(root, text="NIM", font="Roboto", fg="white", bg="black")
+label2 = tk.Label(root, text="NIM", font="Roboto", fg="black", bg="pink")
 canvas.create_window(60, 210, window=label2)
 # for entry data kelas
 entry3 = tk.Entry (root, font="Roboto")
 canvas.create_window(457, 250, height=25, width=411, window=entry3)
-label3 = tk.Label(root, text="Kelas", font="Roboto", fg="white", bg="black")
-canvas.create_window(65, 250, window=label3)
+label3 = tk.Label(root, text="Kelas", font="Roboto", fg="black", bg="pink")
+canvas.create_window(68, 250, window=label3)
 
 global intructions
 
 # tombol untuk rekam data wajah
-intructions = tk.Label(root, text="Welcome", font=("Roboto",15),fg="white",bg="black")
+intructions = tk.Label(root, text="Welcome", font=("Roboto",20),fg="black",bg="pink")
 canvas.create_window(370, 300, window=intructions)
 Rekam_text = tk.StringVar()
 Rekam_btn = tk.Button(root, textvariable=Rekam_text, font="Roboto", bg="#20bebe", fg="white", height=1, width=15,command=rekamDataWajah)

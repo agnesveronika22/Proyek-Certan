@@ -140,46 +140,46 @@ canvas = tk.Canvas(root, width=700, height=400)
 canvas.grid(columnspan=3, rowspan=8)
 canvas.configure(bg="pink")
 # judul
-judul = tk.Label(root, text="Face Recognation", font=("Roboto",34),bg="#242526", fg="white")
-canvas.create_window(350, 80, window=judul)
+judul = tk.Label(root, text="Absensi Wajah", font=("Geneva",34),bg="#242526", fg="white")
+canvas.create_window(350, 90, window=judul)
 #credit
-made = tk.Label(root, text="SugarGirls", font=("Times New Roman",20), bg="pink",fg="#00008B")
-canvas.create_window(360, 20, window=made)
+made = tk.Label(root, text="SugarGirls", font=("Geneva",20), bg="pink",fg="#00008B")
+canvas.create_window(360, 28, window=made)
 # for entry data nama
-entry1 = tk.Entry (root, font="Roboto")
+entry1 = tk.Entry (root, font="Geneva")
 canvas.create_window(457, 170, height=25, width=411, window=entry1)
-label1 = tk.Label(root, text="Nama Mahasiswa", font="Roboto", fg="black", bg="pink")
-canvas.create_window(110,170, window=label1)
+label1 = tk.Label(root, text="Nama Mahasiswa", font="Geneva", fg="black", bg="pink")
+canvas.create_window(120,170, window=label1)
 # for entry data nim
-entry2 = tk.Entry (root, font="Roboto")
+entry2 = tk.Entry (root, font="Geneva")
 canvas.create_window(457, 210, height=25, width=411, window=entry2)
-label2 = tk.Label(root, text="NIM", font="Roboto", fg="black", bg="pink")
+label2 = tk.Label(root, text="NIM", font="Geneva", fg="black", bg="pink")
 canvas.create_window(60, 210, window=label2)
 # for entry data kelas
-entry3 = tk.Entry (root, font="Roboto")
+entry3 = tk.Entry (root, font="Geneva")
 canvas.create_window(457, 250, height=25, width=411, window=entry3)
-label3 = tk.Label(root, text="Kelas", font="Roboto", fg="black", bg="pink")
+label3 = tk.Label(root, text="Kelas", font="Geneva", fg="black", bg="pink")
 canvas.create_window(68, 250, window=label3)
 
 global intructions
 
 # tombol untuk rekam data wajah
-intructions = tk.Label(root, text="Welcome", font=("Roboto",20),fg="black",bg="pink")
-canvas.create_window(370, 300, window=intructions)
+intructions = tk.Label(root, text="Welcome", font=("Geneva",20),fg="black",bg="pink")
+canvas.create_window(350, 300, window=intructions)
 Rekam_text = tk.StringVar()
-Rekam_btn = tk.Button(root, textvariable=Rekam_text, font="Roboto", bg="#20bebe", fg="white", height=1, width=15,command=rekamDataWajah)
+Rekam_btn = tk.Button(root, textvariable=Rekam_text, font="Geneva", bg="#20bebe", fg="white", height=1, width=15,command=rekamDataWajah)
 Rekam_text.set("Take Images")
 Rekam_btn.grid(column=0, row=7)
 
 # tombol untuk training wajah
 Rekam_text1 = tk.StringVar()
-Rekam_btn1 = tk.Button(root, textvariable=Rekam_text1, font="Roboto", bg="#20bebe", fg="white", height=1, width=15,command=trainingWajah)
+Rekam_btn1 = tk.Button(root, textvariable=Rekam_text1, font="Geneva", bg="#20bebe", fg="white", height=1, width=15,command=trainingWajah)
 Rekam_text1.set("Training")
 Rekam_btn1.grid(column=1, row=7)
 
 # tombol absensi dengan wajah
 Rekam_text2 = tk.StringVar()
-Rekam_btn2 = tk.Button(root, textvariable=Rekam_text2, font="Roboto", bg="#20bebe", fg="white", height=1, width=20, command=absensiWajah)
+Rekam_btn2 = tk.Button(root, textvariable=Rekam_text2, font="Geneva", bg="#20bebe", fg="white", height=1, width=20, command=absensiWajah)
 Rekam_text2.set("Automatic Attendance")
 Rekam_btn2.grid(column=2, row=7)
 

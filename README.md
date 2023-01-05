@@ -1,7 +1,10 @@
-# Smart-Absensi
-Program smart absensi menggunakan bahasa pemrograman python dan algoritma haarcascade
+# Project Akhir Certan
+Sugargirls 
+1. 12S20022 - Agnes Sihombing
+2. 12S20049 - Meida Butarbutar
+3. 12S20056 - Siska Manullang
 
-## Cara Kerja
+## Cara Kerja Program
 1. Buka file **App.py**
 2. Masukkan data yang diminta (khusus NIM harus angka)
 3. **Take image** untuk mengambil sampel wajah
